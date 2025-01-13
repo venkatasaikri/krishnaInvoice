@@ -18,7 +18,7 @@ const LoginPage = () => {
       const response = await axios.post("http://localhost:5006/api/auth/login", formData);
       localStorage.setItem("token", response.data.token); // Save token for authenticated requests
       alert("Login successful!");
-      window.location.href = "/home"; // Redirect to home page
+      window.location.href = "/invoice-form"; // Redirect to home page
     } catch (err) {
       alert(err.response.data.message || "Login failed");
     }
