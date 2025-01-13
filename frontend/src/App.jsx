@@ -13,6 +13,7 @@ function App() {
         <Route path="/signup" element={<SignUpPage />} />
         <Route path="/home" element={<HomePage />} />
         <Route path="/invoice/:id?" element={<InvoiceFormPage />} />
+        <Route path="/invoice-form" element={<InvoiceFormPage />} />
       </Routes>
     </Router>
   );
