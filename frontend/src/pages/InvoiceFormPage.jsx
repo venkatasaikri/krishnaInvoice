@@ -15,7 +15,7 @@ const InvoiceFormPage = () => {
   };
 
   const handleSubmit = () => {
-    axios.post("http://localhost:5006/api/invoices", invoice).then(() => {
+    axios.post("https://krishnainvoice.onrender.com/api/invoices", invoice).then(() => {
       alert("Invoice saved!");
     });
   };
