@@ -15,7 +15,7 @@ const HomePage = () => {
     const fetchInvoices = async () => {
       try {
         const token = localStorage.getItem("token");
-        const response = await axios.get("http://localhost:5006/api/invoices", {
+        const response = await axios.get("https://krishnainvoice.onrender.com/api/invoices", {
           headers: { "x-auth-token": token },
         });
         setInvoices(response.data);
