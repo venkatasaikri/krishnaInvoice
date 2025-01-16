@@ -16,7 +16,7 @@ const SignUpPage = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post("http://localhost:5006/api/auth/signup", formData);
+      await axios.post("https://krishnainvoice.onrender.com/api/auth/signup", formData);
       alert("User registered successfully. You can now log in.");
       window.location.href = "/";
     } catch (err) {
